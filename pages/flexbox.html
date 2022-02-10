@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flexbox</title>
+    <style>
+      /*Make parent element a flex container*/
+      ul {
+        display: flex; /*or inline-flex*/
+        list-style: none;
+      }
+      li {
+        height: 100px;
+        background: #8cacea;
+        margin: 8px;
+        flex: 0 1 auto;
+        /*remember this is same as flex: 1 1 auto;*/
+        /*flex : 1 1 auto est identique au réglage : flex-grow :
+        1 flex-shrink : 1 et flex-basis : auto*/
+        /*les largeurs initiales des éléments flex
+        sont automatiquement calculées flex-basis: auto,
+        puis elles "grandissent" pour s'adapter à l'espace
+        disponible flex-grow: 1.*/
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <!--parent element-->
+      <li>
+        Je suis le premier container li Je suis le premier container li Je suis
+        le premier container li le premier container li le premier container li
+        le premier container li
+      </li>
+      <!--first child element-->
+      <li></li>
+      <!--second child element-->
+      <li></li>
+      <!--third child element-->
+    </ul>
+  </body>
+</html>

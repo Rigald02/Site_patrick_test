@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #000;
+  align-items: center;
+}
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: black;
+  background: white;
+  padding: 10px;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+}
+
+header ul li {
+  padding: 16px;
+}
+
+footer {
+  background-color: gray;
+  color: white;
+  padding: 5px;
+}
+.vp-logo i {
+  color: #f1c40f;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+.hero {
+  display: flex;
+  flex: auto; /*remember this is same as flex: 1 1 auto;*/
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/frame.jpg) center center/cover;
+  /*background-size: cover;*/
+}
+
+.hero-content {
+  max-width: 800px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+}
+
+strong {
+  color: #f1c40f;
+  font-weight: 400;
+}
+
+.hero-content p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 2rem;
+}
+
+/* SECTION OFFER*/
+.offer {
+  padding: 5rem 1rem 10rem 1rem;
+  /* équivalent à 
+  padding-top: 160px;
+  padding-right:16px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  */
+}
+
+.offer-list {
+  display: flex;
+  flex-flow: row nowrap;
+  /* flex-flow est équivalent à 
+  flex-direction: row
+  et
+  flex-wrap: nowrap;*/
+  justify-content: space-between;
+}
+
+.offer-elem {
+  border: 1px solid #ddd;
+  background: #fff;
+  margin: 1rem;
+  flex: 1; /*same as flex: 1 1 0*/
+}
+
+.offer-elem-img {
+  width: 100%;
+}
+
+.offer-elem-text {
+  padding: 2rem;
+  text-align: center;
+}
+
+.offer-separator {
+  margin: 1rem auto;
+  height: 2px;
+  width: 50px;
+  background: #333;
+}
+
+.title {
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #fff;
+}
